@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.601,=C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.863,C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\MainForm.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.902,C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\StringFunc.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.994,C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\StringFunc.dproj=C:\Users\rlaeh\OneDrive\Desktop\Delphi\DelphiProject\StringFunc.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.863,C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\MainForm.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.273,C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\MainForm.dfm=C:\Users\rlaeh\OneDrive\Desktop\Delphi\DelphiProject\MainForm1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.273,C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\MainForm.pas=C:\Users\rlaeh\OneDrive\Desktop\Delphi\DelphiProject\MainForm1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

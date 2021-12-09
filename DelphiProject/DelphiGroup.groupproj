@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{FF185025-53EB-4DFB-920D-68C9BE8E562E}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="SourceStructure.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FmxProject.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="StaticDynamicArray.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="SourceStructure">
+        <MSBuild Projects="SourceStructure.dproj"/>
+    </Target>
+    <Target Name="SourceStructure:Clean">
+        <MSBuild Projects="SourceStructure.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SourceStructure:Make">
+        <MSBuild Projects="SourceStructure.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FmxProject">
+        <MSBuild Projects="FmxProject.dproj"/>
+    </Target>
+    <Target Name="FmxProject:Clean">
+        <MSBuild Projects="FmxProject.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FmxProject:Make">
+        <MSBuild Projects="FmxProject.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="StaticDynamicArray">
+        <MSBuild Projects="StaticDynamicArray.dproj"/>
+    </Target>
+    <Target Name="StaticDynamicArray:Clean">
+        <MSBuild Projects="StaticDynamicArray.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="StaticDynamicArray:Make">
+        <MSBuild Projects="StaticDynamicArray.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="SourceStructure;FmxProject;StaticDynamicArray"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="SourceStructure:Clean;FmxProject:Clean;StaticDynamicArray:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="SourceStructure:Make;FmxProject:Make;StaticDynamicArray:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
