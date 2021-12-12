@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.519,C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\ForLoop.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.855,C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\Unit5.pas=C:\Users\rlaeh\source\repos\geun25\Delphi\DelphiProject\Unit5.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.606,=C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\Unit5.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.855,C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\Unit5.dfm=C:\Users\rlaeh\source\repos\geun25\Delphi\DelphiProject\Unit5.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.703,C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\ForLoop.dproj=C:\Users\rlaeh\source\repos\geun25\Delphi\DelphiProject\ForLoop.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

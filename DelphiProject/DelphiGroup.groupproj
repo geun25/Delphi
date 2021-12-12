@@ -15,6 +15,9 @@
         <Projects Include="CaseStatement.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="ForLoop.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -59,14 +62,23 @@
     <Target Name="CaseStatement:Make">
         <MSBuild Projects="CaseStatement.dproj" Targets="Make"/>
     </Target>
+    <Target Name="ForLoop">
+        <MSBuild Projects="ForLoop.dproj"/>
+    </Target>
+    <Target Name="ForLoop:Clean">
+        <MSBuild Projects="ForLoop.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ForLoop:Make">
+        <MSBuild Projects="ForLoop.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="SourceStructure;FmxProject;StaticDynamicArray;CaseStatement"/>
+        <CallTarget Targets="SourceStructure;FmxProject;StaticDynamicArray;CaseStatement;ForLoop"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="SourceStructure:Clean;FmxProject:Clean;StaticDynamicArray:Clean;CaseStatement:Clean"/>
+        <CallTarget Targets="SourceStructure:Clean;FmxProject:Clean;StaticDynamicArray:Clean;CaseStatement:Clean;ForLoop:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="SourceStructure:Make;FmxProject:Make;StaticDynamicArray:Make;CaseStatement:Make"/>
+        <CallTarget Targets="SourceStructure:Make;FmxProject:Make;StaticDynamicArray:Make;CaseStatement:Make;ForLoop:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
