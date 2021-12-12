@@ -12,6 +12,9 @@
         <Projects Include="StaticDynamicArray.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="CaseStatement.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -47,14 +50,23 @@
     <Target Name="StaticDynamicArray:Make">
         <MSBuild Projects="StaticDynamicArray.dproj" Targets="Make"/>
     </Target>
+    <Target Name="CaseStatement">
+        <MSBuild Projects="CaseStatement.dproj"/>
+    </Target>
+    <Target Name="CaseStatement:Clean">
+        <MSBuild Projects="CaseStatement.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CaseStatement:Make">
+        <MSBuild Projects="CaseStatement.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="SourceStructure;FmxProject;StaticDynamicArray"/>
+        <CallTarget Targets="SourceStructure;FmxProject;StaticDynamicArray;CaseStatement"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="SourceStructure:Clean;FmxProject:Clean;StaticDynamicArray:Clean"/>
+        <CallTarget Targets="SourceStructure:Clean;FmxProject:Clean;StaticDynamicArray:Clean;CaseStatement:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="SourceStructure:Make;FmxProject:Make;StaticDynamicArray:Make"/>
+        <CallTarget Targets="SourceStructure:Make;FmxProject:Make;StaticDynamicArray:Make;CaseStatement:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
