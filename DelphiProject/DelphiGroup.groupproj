@@ -21,6 +21,9 @@
         <Projects Include="StringListDemo.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="GenericTList.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -83,14 +86,23 @@
     <Target Name="StringListDemo:Make">
         <MSBuild Projects="StringListDemo.dproj" Targets="Make"/>
     </Target>
+    <Target Name="GenericTList">
+        <MSBuild Projects="GenericTList.dproj"/>
+    </Target>
+    <Target Name="GenericTList:Clean">
+        <MSBuild Projects="GenericTList.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GenericTList:Make">
+        <MSBuild Projects="GenericTList.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="SourceStructure;FmxProject;StaticDynamicArray;CaseStatement;ForLoop;StringListDemo"/>
+        <CallTarget Targets="SourceStructure;FmxProject;StaticDynamicArray;CaseStatement;ForLoop;StringListDemo;GenericTList"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="SourceStructure:Clean;FmxProject:Clean;StaticDynamicArray:Clean;CaseStatement:Clean;ForLoop:Clean;StringListDemo:Clean"/>
+        <CallTarget Targets="SourceStructure:Clean;FmxProject:Clean;StaticDynamicArray:Clean;CaseStatement:Clean;ForLoop:Clean;StringListDemo:Clean;GenericTList:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="SourceStructure:Make;FmxProject:Make;StaticDynamicArray:Make;CaseStatement:Make;ForLoop:Make;StringListDemo:Make"/>
+        <CallTarget Targets="SourceStructure:Make;FmxProject:Make;StaticDynamicArray:Make;CaseStatement:Make;ForLoop:Make;StringListDemo:Make;GenericTList:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

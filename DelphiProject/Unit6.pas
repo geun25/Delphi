@@ -88,6 +88,21 @@ begin
     StrList.Values['age'] := 'ºñ¹Ð';
 
     ShowMessage(StrList.Values['name']);
+
+    Memo1.Lines.Clear;
+
+    Memo1.Lines.Add('[Text]');
+    Str := StrList.Text;
+    Memo1.Lines.Add(Str);
+
+    Memo1.Lines.Add('[CommaText]');
+    Str := StrList.CommaText;
+    Memo1.Lines.Add(Str);
+
+    Memo1.Lines.Add('[DelimitedText]');
+    StrList.Delimiter := '|';
+    Str := StrList.DelimitedText;
+    Memo1.Lines.Add(Str);
   finally
 
   end;
