@@ -38,12 +38,4 @@ object Form7: TForm7
     TabOrder = 2
     OnClick = Button2Click
   end
-  object Button3: TButton
-    Left = 264
-    Top = 152
-    Width = 169
-    Height = 41
-    Caption = #51452#50836' '#44592#45733'('#49549#49457', '#47700#49548#46300') '
-    TabOrder = 3
-  end
 end

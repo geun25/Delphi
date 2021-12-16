@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2021-12-14 19:49:58.430,=C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\Unit7.pas</Transaction>
-    <Transaction>2021-12-14 19:50:15.620,C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\GenericTList.dproj=C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>2021-12-14 20:01:37.068,C:\Users\rlaeh\source\repos\geun25\Delphi\DelphiProject\Unit7.dfm=C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\Unit7.dfm</Transaction>
-    <Transaction>2021-12-14 20:01:37.068,C:\Users\rlaeh\source\repos\geun25\Delphi\DelphiProject\Unit7.pas=C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\Unit7.pas</Transaction>
-    <Transaction>2021-12-14 20:01:40.659,C:\Users\rlaeh\source\repos\geun25\Delphi\DelphiProject\GenericTList.dproj=C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\GenericTList.dproj</Transaction>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.620,C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\GenericTList.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.659,C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\GenericTList.dproj=C:\Users\rlaeh\source\repos\geun25\Delphi\DelphiProject\GenericTList.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.068,C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\Unit7.pas=C:\Users\rlaeh\source\repos\geun25\Delphi\DelphiProject\Unit7.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.430,=C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\Unit7.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.068,C:\Users\rlaeh\OneDrive\문서\Embarcadero\Studio\Projects\Unit7.dfm=C:\Users\rlaeh\source\repos\geun25\Delphi\DelphiProject\Unit7.dfm</Transaction>
   </Transactions>
 </BorlandProject>

@@ -24,6 +24,9 @@
         <Projects Include="GenericTList.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="ProcedureFunction.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -95,14 +98,23 @@
     <Target Name="GenericTList:Make">
         <MSBuild Projects="GenericTList.dproj" Targets="Make"/>
     </Target>
+    <Target Name="ProcedureFunction">
+        <MSBuild Projects="ProcedureFunction.dproj"/>
+    </Target>
+    <Target Name="ProcedureFunction:Clean">
+        <MSBuild Projects="ProcedureFunction.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProcedureFunction:Make">
+        <MSBuild Projects="ProcedureFunction.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="SourceStructure;FmxProject;StaticDynamicArray;CaseStatement;ForLoop;StringListDemo;GenericTList"/>
+        <CallTarget Targets="SourceStructure;FmxProject;StaticDynamicArray;CaseStatement;ForLoop;StringListDemo;GenericTList;ProcedureFunction"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="SourceStructure:Clean;FmxProject:Clean;StaticDynamicArray:Clean;CaseStatement:Clean;ForLoop:Clean;StringListDemo:Clean;GenericTList:Clean"/>
+        <CallTarget Targets="SourceStructure:Clean;FmxProject:Clean;StaticDynamicArray:Clean;CaseStatement:Clean;ForLoop:Clean;StringListDemo:Clean;GenericTList:Clean;ProcedureFunction:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="SourceStructure:Make;FmxProject:Make;StaticDynamicArray:Make;CaseStatement:Make;ForLoop:Make;StringListDemo:Make;GenericTList:Make"/>
+        <CallTarget Targets="SourceStructure:Make;FmxProject:Make;StaticDynamicArray:Make;CaseStatement:Make;ForLoop:Make;StringListDemo:Make;GenericTList:Make;ProcedureFunction:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
